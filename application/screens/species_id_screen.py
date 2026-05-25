@@ -182,7 +182,7 @@ class SpeciesIdScreen(ModelTaskScreen):
         dialog = QDialog(self)
         dialog.setWindowTitle("Confidence View – How to interpret this screen")
         dialog.resize(860, 760)
-        images_dir = Path(__file__).resolve().parents[1] / "Images"
+        images_dir = Path(__file__).resolve().parents[1] / "assets"
         rf_example_path = images_dir / "RF_example.png"
         radius_example_path = images_dir / "radius neighbours.png"
         rf_example_html = ""

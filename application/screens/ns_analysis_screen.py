@@ -132,7 +132,7 @@ class NsAnalysisScreen(QWidget):
 
         if not pca_path.exists() or not scaler_path.exists() or not coords_path.exists():
             self.status.setText(
-                "❌ Missing PCA files in screens/PCA.\n"
+                "❌ Missing PCA files in application/screens/PCA.\n"
                 "Expected:\n"
                 " - pca_model.joblib\n"
                 " - pca_scaler.joblib\n"

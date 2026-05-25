@@ -3,7 +3,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from maldi_imm.SpectrumObject import SpectrumObject
+from ..SpectrumObject import SpectrumObject
 import math
 import numpy as np
 

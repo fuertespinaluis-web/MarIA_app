@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 import numpy as np
 import torch.nn.functional as F
-from maldi_imm.losses.losses import peak_presence_intensity_loss
+from ..losses.losses import peak_presence_intensity_loss
 
-from maldi_imm.utils.conditional_utils import get_condition
+from ..utils.conditional_utils import get_condition
 
 
 # Define some constants

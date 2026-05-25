@@ -106,13 +106,12 @@ class SplashScreen(QWidget):
 
 
 def show_splash_then(main_window: QWidget, ms: int = 6000) -> None:
-    # subimos de /screens a /MarIA_app
     base_dir = Path(__file__).resolve().parent.parent
 
     candidates = [
-        base_dir / "Images" / "Video Project.mp4",
-        base_dir / "Images" / "splash.mp4",
-        base_dir / "Images" / "maria_splash.mp4",
+        base_dir / "assets" / "Video Project.mp4",
+        base_dir / "assets" / "splash.mp4",
+        base_dir / "assets" / "maria_splash.mp4",
     ]
 
     video_path = None

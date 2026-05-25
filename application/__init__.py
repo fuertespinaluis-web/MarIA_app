@@ -1,0 +1,1 @@
+"""MarIA desktop application package."""

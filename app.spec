@@ -5,13 +5,13 @@ from pathlib import Path
 from PyInstaller.utils.hooks import collect_submodules
 
 
-project_root = str(Path(SPECPATH).resolve().parents[1])
+project_root = str(Path(SPECPATH).resolve())
 hiddenimports = [
     name for name in collect_submodules('sklearn')
     if '.tests' not in name and not name.endswith('.conftest')
 ] + [
-    'maldi_imm.SpectrumObject',
-    'maldi_imm.preprocessing',
+    'application.maldi_imm.SpectrumObject',
+    'application.maldi_imm.preprocessing',
 ]
 
 
@@ -20,10 +20,9 @@ a = Analysis(
     pathex=[project_root],
     binaries=[],
     datas=[
-        ('Images', 'Images'),
-        ('screens/PCA', 'screens/PCA'),
-        ('screens/fig_threshold', 'screens/fig_threshold'),
-        ('screens/fig_rf_local', 'screens/fig_rf_local'),
+        ('application/assets', 'application/assets'),
+        ('application/screens/PCA', 'application/screens/PCA'),
+        ('application/screens/fig_threshold', 'application/screens/fig_threshold'),
     ],
     hiddenimports=hiddenimports,
     hookspath=[],
@@ -35,7 +34,6 @@ a = Analysis(
         'scipy.tests',
         'sklearn.tests',
         'plotly.tests',
-        'torch',
         'torch.testing',
     ],
     noarchive=False,
@@ -50,7 +48,7 @@ exe = EXE(
     a.datas,
     [],
     name='MarIA',
-    icon='Images\\maria_logo.ico',
+    icon='application\\assets\\maria_logo.ico',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

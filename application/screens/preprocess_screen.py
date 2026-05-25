@@ -17,8 +17,8 @@ from PySide6.QtWidgets import (
 from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
-from maldi_imm.SpectrumObject import SpectrumObject
-from maldi_imm.preprocessing import (
+from ..maldi_imm.SpectrumObject import SpectrumObject
+from ..maldi_imm.preprocessing import (
     SequentialPreprocessor,
     VarStabilizer,
     Smoother,

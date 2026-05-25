@@ -37,7 +37,7 @@ class MainUI(QWidget):
         super().__init__()
 
         base_dir = Path(__file__).resolve().parents[1]
-        img = base_dir / "Images"
+        img = base_dir / "assets"
         model_dir = img / "model"
         pca_dir = base_dir / "screens" / "PCA" / "PCA_DA_train_only" / "DA_x1p5"
 

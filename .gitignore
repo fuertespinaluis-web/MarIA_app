@@ -1,18 +1,45 @@
+# Python cache / bytecode
 __pycache__/
 *.py[cod]
 *$py.class
 
+# Build outputs
 build/
 dist/
+*.egg-info/
+.eggs/
+wheels/
 
+# Virtual environments
+.env
+.envrc
 .venv/
 venv/
 env/
+ENV/
 MarIA_app/
 
+# Test / tooling caches
+.cache/
+.coverage
+.coverage.*
+.hypothesis/
+.mypy_cache/
+.nox/
+.pytest_cache/
+.ruff_cache/
+.tox/
+.pyre/
+.pytype/
+htmlcov/
+
+# Local/editor/system files
 *.log
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/
+tempCodeRunnerFile.py
 
 # Large PCA training artifacts. The app uses the PCA model/scaler/metadata,
 # not these training matrices or serialized spectra.

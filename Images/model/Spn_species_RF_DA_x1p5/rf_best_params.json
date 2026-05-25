@@ -1,0 +1,35 @@
+{
+  "data_dir": "/shares/amr.imm.uzh/data/projects/lfuertes_guest/pneumo/data/PCA_DA_rf_species/DA_x1p5",
+  "target": "species",
+  "keep_labels": [
+    "S. pneumoniae",
+    "S. mitis/oralis"
+  ],
+  "pos_label": "S. pneumoniae",
+  "model": "RandomForestClassifier",
+  "data_augmentation": "OFF",
+  "kfold": 5,
+  "seed": 0,
+  "n_train": 964,
+  "n_test": 108,
+  "train_class_counts": {
+    "S. mitis/oralis": 482,
+    "S. pneumoniae": 482
+  },
+  "test_class_counts": {
+    "S. mitis/oralis": 27,
+    "S. pneumoniae": 81
+  },
+  "best_score_bal_acc": 0.9989583333333334,
+  "best_params": {
+    "clf__class_weight": null,
+    "clf__max_depth": null,
+    "clf__max_features": "sqrt",
+    "clf__min_samples_leaf": 1,
+    "clf__min_samples_split": 2,
+    "clf__n_estimators": 500
+  },
+  "saved_model": "/shares/amr.imm.uzh/data/projects/lfuertes_guest/pneumo/output/Spn_species_RF_DA_x1p5/rf_spn_species_best.joblib",
+  "feature_importances_csv": "/shares/amr.imm.uzh/data/projects/lfuertes_guest/pneumo/output/Spn_species_RF_DA_x1p5/rf_feature_importances.csv",
+  "probabilities_csv": "/shares/amr.imm.uzh/data/projects/lfuertes_guest/pneumo/output/Spn_species_RF_DA_x1p5/test_predictions_with_probabilities.csv"
+}

@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+build/
+dist/
+
+.venv/
+venv/
+env/
+MarIA_app/
+
+*.log
+.DS_Store
+Thumbs.db
+
+# Large PCA training artifacts. The app uses the PCA model/scaler/metadata,
+# not these training matrices or serialized spectra.
+screens/PCA/**/*.npy
+screens/PCA/**/*_spectra.joblib
+screens/PCA/**/pca_overlay_last*.html
+screens/PCA/PCA_DA_train_only/DA_balance_minority/
+screens/PCA/PCA_DA_train_only/DA_x2/
+screens/PCA/PCA_DA_train_only/DA_x3/
+screens/PCA/PCA_DA_train_only/no_DA/
+screens/PCA/PCA_DA_train_only/*_summary.csv
+screens/PCA/PCA_DA_train_only/DA_x1p5/DA_x1p5_*_metadata.csv
+screens/PCA/PCA_DA_train_only/DA_x1p5/pca_new_coords.csv
+screens/fig_rf_local/

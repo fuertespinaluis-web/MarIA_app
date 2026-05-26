@@ -2,9 +2,8 @@
 
 MarIA is an open-source application and end-to-end machine learning pipeline for species-level identification within the *Streptococcus mitis* group (SmG) using MALDI-TOF mass spectrometry data.
 
----
 
-## 🧠 Overview
+## Overview
 
 Accurate discrimination between *Streptococcus pneumoniae* and closely related members of the SmG remains challenging using conventional MALDI-TOF workflows. MarIA addresses this limitation by combining standardized spectral preprocessing with machine learning to improve species-level identification.
 
@@ -13,9 +12,8 @@ The project includes:
 - A trained Random Forest classifier
 - An interactive application for prediction and confidence visualization
 
----
 
-## ⚙️ Features
+## Features
 
 - ✅ Standardized MALDI-TOF preprocessing pipeline  
 - ✅ Random Forest-based classification model  
@@ -24,9 +22,8 @@ The project includes:
 - ✅ Confidence visualization module  
 - ✅ User-friendly interface for spectrum analysis  
 
----
 
-## 🔬 Machine Learning Pipeline
+## Machine Learning Pipeline
 
 The pipeline consists of the following steps:
 
@@ -54,9 +51,8 @@ The pipeline consists of the following steps:
    - Integration into the MarIA application
    - Interactive prediction and confidence assessment
 
----
 
-## 💻 Application (MarIA)
+## Application (MarIA)
 
 The MarIA application allows users to:
 
@@ -65,9 +61,8 @@ The MarIA application allows users to:
 - Obtain species-level predictions  
 - Visualize prediction confidence in the context of external validation data  
 
----
 
-## 🚀 Installation
+## Installation
 
 Clone the repository:
 
